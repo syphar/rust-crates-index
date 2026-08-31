@@ -5,6 +5,31 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## Unreleased
+
+Add `pubtime` field to `Version`.
+
+### Commit Statistics
+
+<csr-read-only-do-not-edit/>
+
+ - 3 commits contributed to the release.
+ - 116 days passed between releases.
+ - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
+ - 0 issues like '(#ID)' were seen in commit messages
+
+### Commit Details
+
+<csr-read-only-do-not-edit/>
+
+<details><summary>view details</summary>
+
+ * **Uncategorized**
+    - Merge pull request #200 from syphar/pubtime ([`a96ee05`](https://github.com/frewsxcv/rust-crates-index/commit/a96ee050bc62d6aba59949d0d556b49c3c3b5ee9))
+    - Review ([`c4e4273`](https://github.com/frewsxcv/rust-crates-index/commit/c4e4273ae6585d9071c327a3dfbc805454f26275))
+    - Add support for `pubtime` field in registry ([`093050e`](https://github.com/frewsxcv/rust-crates-index/commit/093050eb530c7145ae48ad883339b7d6c956d6d0))
+</details>
+
 ## 3.14.0 (2026-05-07)
 
 ### Bug Fixes
@@ -15,7 +40,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 <csr-read-only-do-not-edit/>
 
- - 3 commits contributed to the release.
+ - 4 commits contributed to the release.
+ - 82 days passed between releases.
  - 1 commit was understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -26,6 +52,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <details><summary>view details</summary>
 
  * **Uncategorized**
+    - Release crates-index v3.14.0 ([`9617889`](https://github.com/frewsxcv/rust-crates-index/commit/9617889191bbf19bdc254834b3abd7b3a88ceffe))
     - Merge pull request #198 from DCjanus/fix/gix-0-83-security-update ([`242df70`](https://github.com/frewsxcv/rust-crates-index/commit/242df7091248e0f9b4fb2a23d7dc78cdf3a8b03d))
     - Upgrade gix for security advisory ([`a446be3`](https://github.com/frewsxcv/rust-crates-index/commit/a446be3d0bacb82993f971f20c5eff681e120f2e))
     - Merge pull request #197 from DCjanus/chore/upgrade-gix-0.79 ([`38ab750`](https://github.com/frewsxcv/rust-crates-index/commit/38ab75057052102d59d45046f5106fa79602b6bc))
@@ -34,10 +61,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## 3.13.0 (2026-02-14)
 
 <csr-id-71771472d6ae56ff3a9c3868f22583881cd9f0e6/>
-
-### Chore
-
- - <csr-id-71771472d6ae56ff3a9c3868f22583881cd9f0e6/> upgrade gix and toml
 
 ### Commit Statistics
 
@@ -94,6 +117,7 @@ Update dependencies, including `gix` to v0.77.
 <csr-read-only-do-not-edit/>
 
  - 9 commits contributed to the release.
+ - 159 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -122,17 +146,12 @@ Update dependencies, including `gix` to v0.77.
 
 Update depndencies, notably `gix` to v0.73.
 
-### Other
-
- - <csr-id-d99121572056cceacd8f90c976de4bd2aaf26c63/> upgrade gix to v0.73
- - <csr-id-55fedf14e184043c9098c84872ae8d94e5de31e3/> upgrade toml to v0.9
-
 ### Commit Statistics
 
 <csr-read-only-do-not-edit/>
 
  - 7 commits contributed to the release over the course of 93 calendar days.
- - 93 days passed between releases.
+ - 94 days passed between releases.
  - 2 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -163,6 +182,7 @@ Update depndencies, notably `gix` to v0.73.
 <csr-read-only-do-not-edit/>
 
  - 2 commits contributed to the release.
+ - 20 days passed between releases.
  - 1 commit was understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -215,7 +235,7 @@ This release contains the upgrade to `gix` v0.71.
 <csr-read-only-do-not-edit/>
 
  - 5 commits contributed to the release.
- - 6 days passed between releases.
+ - 7 days passed between releases.
  - 1 commit was understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -237,21 +257,16 @@ This release contains the upgrade to `gix` v0.71.
 
 <csr-id-707342ab8e821e55b857674a8d675c6aebc77c94/>
 
-### Chore
-
- - <csr-id-707342ab8e821e55b857674a8d675c6aebc77c94/> Update ureq example to version 3.0
-
 ### New Features
 
  - <csr-id-aac3115d95c1ce6dfef689dd3ece876322d90e99/> upgrade `gix` to v0.70
- - <csr-id-d003e6986f6fbe6041790cdeefcd052eb360f2e8/> Add `git-https-reqwest` feature
-   That way it's possible to build `rust-crates-index` without `curl`.
 
 ### Commit Statistics
 
 <csr-read-only-do-not-edit/>
 
  - 10 commits contributed to the release.
+ - 25 days passed between releases.
  - 2 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -288,7 +303,7 @@ This release contains the upgrade to `gix` v0.71.
 <csr-read-only-do-not-edit/>
 
  - 7 commits contributed to the release.
- - 58 days passed between releases.
+ - 59 days passed between releases.
  - 1 commit was understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -380,6 +395,7 @@ A release to update dependencies, namely `gix` is now at version 0.67.
 <csr-read-only-do-not-edit/>
 
  - 4 commits contributed to the release.
+ - 83 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -407,7 +423,7 @@ A release to update dependencies, namely `gix` is now at version 0.67.
 <csr-read-only-do-not-edit/>
 
  - 2 commits contributed to the release.
- - 23 days passed between releases.
+ - 24 days passed between releases.
  - 1 commit was understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -429,11 +445,6 @@ A release to update dependencies, namely `gix` is now at version 0.67.
 ### New Features
 
  - <csr-id-73b7bf2d6de441f62962bf7744cc30ce2d15e50e/> update `gix` to v0.64
-
-### Other
-
- - <csr-id-704225198d5ada22863f4f20eac0c193b1c0c4a3/> expose dependency registry url
-   This commit exposes the field `registry` on the `Dependency` struct. This field is always set by `cargo`, and it's needed to properly handle dependencies when multiple registries are used.
 
 ### Commit Statistics
 
@@ -501,7 +512,7 @@ This release uses `http` 0.2 again, whereas the upcoming v3.0 will be for `http`
 <csr-read-only-do-not-edit/>
 
  - 4 commits contributed to the release.
- - 3 days passed between releases.
+ - 4 days passed between releases.
  - 1 commit was understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -529,7 +540,7 @@ This release uses `http` 0.2 again, whereas the upcoming v3.0 will be for `http`
 <csr-read-only-do-not-edit/>
 
  - 8 commits contributed to the release.
- - 38 days passed between releases.
+ - 39 days passed between releases.
  - 1 commit was understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -553,10 +564,6 @@ This release uses `http` 0.2 again, whereas the upcoming v3.0 will be for `http`
 ## 2.8.0 (2024-04-15)
 
 <csr-id-07c23f363d7a0494b52e0741794d6dfa96fd65a1/>
-
-### Chore
-
- - <csr-id-07c23f363d7a0494b52e0741794d6dfa96fd65a1/> upgrade gix to v0.62
 
 ### Commit Statistics
 
@@ -592,6 +599,7 @@ This release uses `http` 0.2 again, whereas the upcoming v3.0 will be for `http`
 <csr-read-only-do-not-edit/>
 
  - 5 commits contributed to the release.
+ - 43 days passed between releases.
  - 1 commit was understood as [conventional](https://www.conventionalcommits.org).
  - 1 unique issue was worked on: [#164](https://github.com/frewsxcv/rust-crates-index/issues/164)
 
@@ -613,10 +621,6 @@ This release uses `http` 0.2 again, whereas the upcoming v3.0 will be for `http`
 ## 2.6.0 (2024-02-25)
 
 <csr-id-110d4a8096b781e1cde8a35c08cb8c68d7a69612/>
-
-### Chore
-
- - <csr-id-110d4a8096b781e1cde8a35c08cb8c68d7a69612/> update to gix v0.59
 
 ### Commit Statistics
 
@@ -658,7 +662,7 @@ This release uses `http` 0.2 again, whereas the upcoming v3.0 will be for `http`
 <csr-read-only-do-not-edit/>
 
  - 3 commits contributed to the release.
- - 6 days passed between releases.
+ - 7 days passed between releases.
  - 1 commit was understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -677,10 +681,6 @@ This release uses `http` 0.2 again, whereas the upcoming v3.0 will be for `http`
 ## 2.5.0 (2024-01-21)
 
 <csr-id-5960658acef322349d9c8e9ac291365321b6add0/>
-
-### Chore
-
- - <csr-id-5960658acef322349d9c8e9ac291365321b6add0/> update `gix` to v0.58
 
 ### New Features
 
@@ -713,21 +713,12 @@ This release uses `http` 0.2 again, whereas the upcoming v3.0 will be for `http`
 <csr-id-4ffad17947228bfeff47200d1ca969ae637c35cb/>
 <csr-id-39d9fb66270d38d4a3933e0f52edd3e0afcad143/>
 
-### Chore
-
- - <csr-id-81f70d7cbcac5d4dbef6477cd803b1d103099347/> update `gix` to v0.57
-
-### Other
-
- - <csr-id-4ffad17947228bfeff47200d1ca969ae637c35cb/> Update readme to include the sparse protocol
- - <csr-id-39d9fb66270d38d4a3933e0f52edd3e0afcad143/> Link to examples of how to update the sparse index
-
 ### Commit Statistics
 
 <csr-read-only-do-not-edit/>
 
  - 10 commits contributed to the release over the course of 53 calendar days.
- - 53 days passed between releases.
+ - 54 days passed between releases.
  - 3 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -754,15 +745,12 @@ This release uses `http` 0.2 again, whereas the upcoming v3.0 will be for `http`
 
 <csr-id-82002e7d8362b5e0736f994a1569d002333c7fad/>
 
-### Chore
-
- - <csr-id-82002e7d8362b5e0736f994a1569d002333c7fad/> upgrade `gitoxide` to v0.55.2
-
 ### Commit Statistics
 
 <csr-read-only-do-not-edit/>
 
  - 4 commits contributed to the release.
+ - 42 days passed between releases.
  - 1 commit was understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -818,10 +806,6 @@ This release uses `http` 0.2 again, whereas the upcoming v3.0 will be for `http`
 
 <csr-id-72796a91835d05099fc20f9f5895288d9d3ff715/>
 
-### Chore
-
- - <csr-id-72796a91835d05099fc20f9f5895288d9d3ff715/> upgrade gix to v0.51 from v0.50
-
 ### Bug Fixes
 
  - <csr-id-2d4bbdaf7147b556b36b60b7facf042b079bd19c/> Allow using git::URL without git feature active
@@ -831,7 +815,7 @@ This release uses `http` 0.2 again, whereas the upcoming v3.0 will be for `http`
 <csr-read-only-do-not-edit/>
 
  - 7 commits contributed to the release over the course of 17 calendar days.
- - 17 days passed between releases.
+ - 18 days passed between releases.
  - 2 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 1 unique issue was worked on: [#149](https://github.com/frewsxcv/rust-crates-index/issues/149)
 
@@ -887,17 +871,12 @@ This release uses `http` 0.2 again, whereas the upcoming v3.0 will be for `http`
  - <csr-id-3bb46abf5a07db3c4b98dabc7efe6ddebc2174ff/> always use `/` for sparse URLs
    Previously on windows, backslashes could have snuck in which may cause problems.
 
-### Other
-
- - <csr-id-421de3512465f135af8d63ed276ceba9e882f8f3/> add new example to print information using the sparse index: `list_recent_versions`.
-   Run it with `cargo run --example list_recent_versions -- foo bar baz gix rustc gcc foobar blaz`.
-
 ### Commit Statistics
 
 <csr-read-only-do-not-edit/>
 
  - 37 commits contributed to the release over the course of 3 calendar days.
- - 3 days passed between releases.
+ - 4 days passed between releases.
  - 6 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 1 unique issue was worked on: [#62](https://github.com/frewsxcv/rust-crates-index/issues/62)
 
@@ -971,60 +950,17 @@ replacing `git2` with [`gix`](https://docs.rs/gix/0.50.1/gix/).
 
 For details about all breaking changes, please take a look at the `(BREAKING)` paragraphs that follow.
 
-### Other
-
- - <csr-id-965f6e98788a62c380ed1daa61867817685d7371/> make clear that `GitIndex` auto-clones any index as needed.
-
 ### New Features
 
  - <csr-id-0d893523aa682b10c50441be3ec1d8f5356bf2c0/> add `dirs::TBD` to make it possible to know where the index should be looked for.
    This might be interesting also for tools that deal with the data alone, like `cargo-cache`.
-
-### Chore
-
- - <csr-id-c293e35e43650bebbdbd869c4c9d01bfb2e836c0/> Add `CHANGELOG.md` for a built-in version of it
- - <csr-id-2c5d33a51604f032ff1538b16cf0408a8fe2568a/> replace `git2` with `gix`.
-   This change bringe performance improvements along with increased compatibilty
-   with other build targets, as pure Rust builds are now possible.
-
-### Refactor (BREAKING)
-
- - <csr-id-7e86e3c625944cdeba55dda6086617796fb061e3/> refactor code structure
-   The goal is to keep related code together, instead of spreading it out into
-   top-level modules exclusively.
-   
-   This also renames `Index` to `GitIndex`.
-   Further changes involved renaming `ChangesIter` to `git::Changes`, and
-   `INDEX_GIT_URL` to `git::URL`, and `CRATES_IO_HTTP_INDEX` to `sparse::URL`.
-
-### Chore (BREAKING)
-
- - <csr-id-a8953e0939711940f2ef554155edcf3853030df3/> remove `ssh` feature, and rename many existing features, change defaults
-   * `git-index` -> `git`
-   * add `git-performance`
-   * `https` -> `git-https`
-   * `sparse-http` -> `sparse`
-   
-   The default features are now `sparse`, effectively adjusting to the fact
-   that the default is now the http registry.
- - <csr-id-260c103409ff08a96c465568363675d6dc8a2fa7/> remove `changes` feature
-   It only gated a little bit of code, but no dependencies. Thus it had no considerable
-   effect on build times and can be removed.
-
-### Other
-
- - <csr-id-235e175022647f9ab63b024ca0780c907b9fd6ec/> make clear that `GitIndex` auto-clones any index as needed.
- - <csr-id-beb9f12885703574ba3c3307c368fb84c1a05028/> crate features are now documented
-
-### Chore
-
- - <csr-id-42d89c2e84f0e81da3db046864be379a2ae9eb15/> Add `CHANGELOG.md` for a built-in version of it
 
 ### Commit Statistics
 
 <csr-read-only-do-not-edit/>
 
  - 39 commits contributed to the release over the course of 7 calendar days.
+ - 8 days passed between releases.
  - 8 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 1 unique issue was worked on: [#129](https://github.com/frewsxcv/rust-crates-index/issues/129)
 
@@ -1096,7 +1032,7 @@ For details about all breaking changes, please take a look at the `(BREAKING)` p
 <csr-read-only-do-not-edit/>
 
  - 11 commits contributed to the release.
- - 28 days passed between releases.
+ - 29 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -1148,17 +1084,6 @@ For details about all breaking changes, please take a look at the `(BREAKING)` p
 <csr-id-a69a7785347cfc7b5773c73e0b10b8e5b63a1e58/>
 <csr-id-135179a0e95a97e3e57d16692c7b17c54ffe0d16/>
 
-### Other
-
- - <csr-id-de7df1cb85b322e0e9cde387a01f426685d8a4a4/> Add `cargo check --all-targets --no-default-features`
-
-### Refactor
-
- - <csr-id-a69a7785347cfc7b5773c73e0b10b8e5b63a1e58/> Move Index tests to base_index
-   To make it easier to turn git2 into an optional dep.
- - <csr-id-135179a0e95a97e3e57d16692c7b17c54ffe0d16/> Move private fn fetch_opts() into mod bare_index
-   To make it easier to turn git2 into an optional dep.
-
 ### Commit Statistics
 
 <csr-read-only-do-not-edit/>
@@ -1202,10 +1127,6 @@ For details about all breaking changes, please take a look at the `(BREAKING)` p
 
 <csr-id-8cf14fbe0317ba4fc443eb6926f4a952bf8e7e0e/>
 
-### Chore
-
- - <csr-id-8cf14fbe0317ba4fc443eb6926f4a952bf8e7e0e/> Release crates-index version 0.19.11
-
 ### New Features
 
  - <csr-id-810fa8726d1b628550bb80d1f7aa716a411f64ed/> Allow for fetching indexes from private registries via SSH key
@@ -1215,7 +1136,7 @@ For details about all breaking changes, please take a look at the `(BREAKING)` p
 <csr-read-only-do-not-edit/>
 
  - 9 commits contributed to the release.
- - 32 days passed between releases.
+ - 33 days passed between releases.
  - 2 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -1241,10 +1162,6 @@ For details about all breaking changes, please take a look at the `(BREAKING)` p
 
 <csr-id-286b2251ae8a286f8992831f7a845f88227107dd/>
 
-### Chore
-
- - <csr-id-286b2251ae8a286f8992831f7a845f88227107dd/> Release crates-index version 0.19.10
-
 ### New Features
 
  - <csr-id-ab8c655d7835a93c87b348c86ecc928ecfaceaea/> Add support for 'rust_version'
@@ -1260,7 +1177,7 @@ For details about all breaking changes, please take a look at the `(BREAKING)` p
 <csr-read-only-do-not-edit/>
 
  - 4 commits contributed to the release over the course of 8 calendar days.
- - 29 days passed between releases.
+ - 30 days passed between releases.
  - 2 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -1284,6 +1201,7 @@ For details about all breaking changes, please take a look at the `(BREAKING)` p
 <csr-read-only-do-not-edit/>
 
  - 1 commit contributed to the release.
+ - 36 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -1304,7 +1222,7 @@ For details about all breaking changes, please take a look at the `(BREAKING)` p
 <csr-read-only-do-not-edit/>
 
  - 12 commits contributed to the release over the course of 11 calendar days.
- - 11 days passed between releases.
+ - 12 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -1333,16 +1251,12 @@ For details about all breaking changes, please take a look at the `(BREAKING)` p
 
 <csr-id-34501eae518292acb55a4821214eff9fc03e7aee/>
 
-### Chore
-
- - <csr-id-34501eae518292acb55a4821214eff9fc03e7aee/> Release crates-index version 0.19.6
-
 ### Commit Statistics
 
 <csr-read-only-do-not-edit/>
 
  - 2 commits contributed to the release.
- - 8 days passed between releases.
+ - 9 days passed between releases.
  - 1 commit was understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -1360,10 +1274,6 @@ For details about all breaking changes, please take a look at the `(BREAKING)` p
 ## v0.19.5 (2023-02-15)
 
 <csr-id-6e5d42720fe76834213723ebe95e52e5dd788f15/>
-
-### Chore
-
- - <csr-id-6e5d42720fe76834213723ebe95e52e5dd788f15/> Release crates-index version 0.19.5
 
 ### Commit Statistics
 
@@ -1395,7 +1305,7 @@ For details about all breaking changes, please take a look at the `(BREAKING)` p
 <csr-read-only-do-not-edit/>
 
  - 2 commits contributed to the release.
- - 5 days passed between releases.
+ - 6 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -1435,10 +1345,6 @@ For details about all breaking changes, please take a look at the `(BREAKING)` p
 
 <csr-id-a3407ce2f58217e0b4dc30552cf65d4a11d67d5a/>
 
-### Chore
-
- - <csr-id-a3407ce2f58217e0b4dc30552cf65d4a11d67d5a/> Release crates-index version 0.19.2
-
 ### Commit Statistics
 
 <csr-read-only-do-not-edit/>
@@ -1467,7 +1373,7 @@ For details about all breaking changes, please take a look at the `(BREAKING)` p
 <csr-read-only-do-not-edit/>
 
  - 3 commits contributed to the release.
- - 2 days passed between releases.
+ - 3 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -1520,15 +1426,12 @@ For details about all breaking changes, please take a look at the `(BREAKING)` p
 
  - <csr-id-6780e1f979a1439d36a047b9466bec7c50a94884/> follow cargo's search order of .cargo/config.toml
 
-### Style
-
- - <csr-id-18253ffa6c5d837efdf607718270c5845ee76f70/> fix format
-
 ### Commit Statistics
 
 <csr-read-only-do-not-edit/>
 
  - 7 commits contributed to the release over the course of 1 calendar day.
+ - 29 days passed between releases.
  - 3 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -1602,6 +1505,7 @@ For details about all breaking changes, please take a look at the `(BREAKING)` p
 <csr-read-only-do-not-edit/>
 
  - 8 commits contributed to the release.
+ - 87 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -1629,7 +1533,7 @@ For details about all breaking changes, please take a look at the `(BREAKING)` p
 <csr-read-only-do-not-edit/>
 
  - 2 commits contributed to the release.
- - 21 days passed between releases.
+ - 22 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -1704,6 +1608,7 @@ For details about all breaking changes, please take a look at the `(BREAKING)` p
 <csr-read-only-do-not-edit/>
 
  - 2 commits contributed to the release.
+ - 87 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -1721,10 +1626,6 @@ For details about all breaking changes, please take a look at the `(BREAKING)` p
 ## v0.18.1 (2021-10-25)
 
 <csr-id-9984f8920bea2fbeea999137b33aae8d8eb2f094/>
-
-### Chore
-
- - <csr-id-9984f8920bea2fbeea999137b33aae8d8eb2f094/> Switch to shields.io for badge, closes #67
 
 ### New Features
 
@@ -1766,7 +1667,7 @@ It should work without any code changes. Only the `git2` and `toml` dependencies
 <csr-read-only-do-not-edit/>
 
  - 12 commits contributed to the release over the course of 63 calendar days.
- - 143 days passed between releases.
+ - 144 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -1857,6 +1758,7 @@ It should work without any code changes. Only the `git2` and `toml` dependencies
 <csr-read-only-do-not-edit/>
 
  - 6 commits contributed to the release.
+ - 47 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -1882,7 +1784,7 @@ It should work without any code changes. Only the `git2` and `toml` dependencies
 <csr-read-only-do-not-edit/>
 
  - 9 commits contributed to the release over the course of 128 calendar days.
- - 128 days passed between releases.
+ - 129 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -1911,6 +1813,7 @@ It should work without any code changes. Only the `git2` and `toml` dependencies
 <csr-read-only-do-not-edit/>
 
  - 8 commits contributed to the release over the course of 2 calendar days.
+ - 27 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -1959,7 +1862,7 @@ It should work without any code changes. Only the `git2` and `toml` dependencies
 <csr-read-only-do-not-edit/>
 
  - 1 commit contributed to the release.
- - 30 days passed between releases.
+ - 31 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -1980,7 +1883,7 @@ It should work without any code changes. Only the `git2` and `toml` dependencies
 <csr-read-only-do-not-edit/>
 
  - 5 commits contributed to the release over the course of 2 calendar days.
- - 2 days passed between releases.
+ - 3 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 1 unique issue was worked on: [#41](https://github.com/frewsxcv/rust-crates-index/issues/41)
 
@@ -2006,7 +1909,7 @@ It should work without any code changes. Only the `git2` and `toml` dependencies
 <csr-read-only-do-not-edit/>
 
  - 22 commits contributed to the release over the course of 128 calendar days.
- - 128 days passed between releases.
+ - 129 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -2048,6 +1951,7 @@ It should work without any code changes. Only the `git2` and `toml` dependencies
 <csr-read-only-do-not-edit/>
 
  - 4 commits contributed to the release.
+ - 49 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -2071,7 +1975,7 @@ It should work without any code changes. Only the `git2` and `toml` dependencies
 <csr-read-only-do-not-edit/>
 
  - 1 commit contributed to the release.
- - 11 days passed between releases.
+ - 12 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -2118,6 +2022,7 @@ It should work without any code changes. Only the `git2` and `toml` dependencies
 <csr-read-only-do-not-edit/>
 
  - 3 commits contributed to the release.
+ - 9 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -2140,6 +2045,7 @@ It should work without any code changes. Only the `git2` and `toml` dependencies
 <csr-read-only-do-not-edit/>
 
  - 14 commits contributed to the release.
+ - 176 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 1 unique issue was worked on: [#30](https://github.com/frewsxcv/rust-crates-index/issues/30)
 
@@ -2174,6 +2080,7 @@ It should work without any code changes. Only the `git2` and `toml` dependencies
 <csr-read-only-do-not-edit/>
 
  - 9 commits contributed to the release over the course of 37 calendar days.
+ - 66 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -2202,6 +2109,7 @@ It should work without any code changes. Only the `git2` and `toml` dependencies
 <csr-read-only-do-not-edit/>
 
  - 3 commits contributed to the release.
+ - 89 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -2224,6 +2132,7 @@ It should work without any code changes. Only the `git2` and `toml` dependencies
 <csr-read-only-do-not-edit/>
 
  - 5 commits contributed to the release.
+ - 105 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -2248,6 +2157,7 @@ It should work without any code changes. Only the `git2` and `toml` dependencies
 <csr-read-only-do-not-edit/>
 
  - 4 commits contributed to the release over the course of 3 calendar days.
+ - 225 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -2271,6 +2181,7 @@ It should work without any code changes. Only the `git2` and `toml` dependencies
 <csr-read-only-do-not-edit/>
 
  - 6 commits contributed to the release.
+ - 78 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -2296,6 +2207,7 @@ It should work without any code changes. Only the `git2` and `toml` dependencies
 <csr-read-only-do-not-edit/>
 
  - 9 commits contributed to the release.
+ - 265 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -2364,6 +2276,7 @@ It should work without any code changes. Only the `git2` and `toml` dependencies
 <csr-read-only-do-not-edit/>
 
  - 11 commits contributed to the release.
+ - 110 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -2394,6 +2307,7 @@ It should work without any code changes. Only the `git2` and `toml` dependencies
 <csr-read-only-do-not-edit/>
 
  - 6 commits contributed to the release.
+ - 32 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -2419,6 +2333,7 @@ It should work without any code changes. Only the `git2` and `toml` dependencies
 <csr-read-only-do-not-edit/>
 
  - 2 commits contributed to the release.
+ - 53 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -2440,6 +2355,7 @@ It should work without any code changes. Only the `git2` and `toml` dependencies
 <csr-read-only-do-not-edit/>
 
  - 5 commits contributed to the release.
+ - 345 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -2464,6 +2380,7 @@ It should work without any code changes. Only the `git2` and `toml` dependencies
 <csr-read-only-do-not-edit/>
 
  - 8 commits contributed to the release.
+ - 69 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -2491,7 +2408,7 @@ It should work without any code changes. Only the `git2` and `toml` dependencies
 <csr-read-only-do-not-edit/>
 
  - 2 commits contributed to the release.
- - 3 days passed between releases.
+ - 4 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -2513,6 +2430,7 @@ It should work without any code changes. Only the `git2` and `toml` dependencies
 <csr-read-only-do-not-edit/>
 
  - 2 commits contributed to the release.
+ - 4 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -2534,6 +2452,7 @@ It should work without any code changes. Only the `git2` and `toml` dependencies
 <csr-read-only-do-not-edit/>
 
  - 2 commits contributed to the release.
+ - 1 day passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
@@ -2555,6 +2474,7 @@ It should work without any code changes. Only the `git2` and `toml` dependencies
 <csr-read-only-do-not-edit/>
 
  - 21 commits contributed to the release.
+ - 107 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
 
