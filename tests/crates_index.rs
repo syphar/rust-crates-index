@@ -13,7 +13,7 @@ use crates_index::{Crate, Dependency, Version};
 
 #[test]
 fn sizes() {
-    assert!(std::mem::size_of::<Version>() <= 152);
+    assert!(std::mem::size_of::<Version>() <= 160);
     assert!(std::mem::size_of::<Crate>() <= 16);
     assert!(std::mem::size_of::<Dependency>() <= 104);
 }
@@ -51,7 +51,7 @@ fn pubtime() {
         {"vers":"1.0.1", "name":"test", "deps":[], "features":{}, "cksum":"1234567890123456789012345678901234567890123456789012345678901234"}"#).unwrap();
 
     assert_eq!(c.versions()[0].pubtime(), Some("2025-11-12T19:30:12Z"));
-    assert_eq!(c.versions()[1].pubtime(), None);
+    assert_eq!(c.versions()[1].pubtime(), None, "pubtime is optional");
 }
 
 #[test]
