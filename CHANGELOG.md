@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## Unreleased
+## 3.14.1 (2026-08-31)
 
 Add `pubtime` field to `Version`.
 
@@ -13,7 +13,7 @@ Add `pubtime` field to `Version`.
 
 <csr-read-only-do-not-edit/>
 
- - 3 commits contributed to the release.
+ - 4 commits contributed to the release.
  - 116 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
@@ -25,6 +25,7 @@ Add `pubtime` field to `Version`.
 <details><summary>view details</summary>
 
  * **Uncategorized**
+    - Prepare changelog prior to release ([`275ad7e`](https://github.com/frewsxcv/rust-crates-index/commit/275ad7e3c43872f496735f4a539a8de320158b4a))
     - Merge pull request #200 from syphar/pubtime ([`a96ee05`](https://github.com/frewsxcv/rust-crates-index/commit/a96ee050bc62d6aba59949d0d556b49c3c3b5ee9))
     - Review ([`c4e4273`](https://github.com/frewsxcv/rust-crates-index/commit/c4e4273ae6585d9071c327a3dfbc805454f26275))
     - Add support for `pubtime` field in registry ([`093050e`](https://github.com/frewsxcv/rust-crates-index/commit/093050eb530c7145ae48ad883339b7d6c956d6d0))
