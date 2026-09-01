@@ -135,7 +135,7 @@ impl Version {
     /// Where to find crate tarball
     #[must_use]
     pub fn download_url(&self, index: &IndexConfig) -> Option<String> {
-        index.download_url(&self.name, &self.vers)
+        index.download_url_with_checksum(&self.name, &self.vers, &self.cksum)
     }
 }
 

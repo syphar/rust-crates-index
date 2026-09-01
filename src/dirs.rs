@@ -32,7 +32,17 @@ pub fn local_path_and_canonical_url_with_hash_kind(
     Ok((path, canonical_url))
 }
 
+/// Appends Cargo's case-preserving `{prefix}` value.
 pub(crate) fn crate_prefix(accumulator: &mut String, crate_name: &str, separator: char) -> Option<()> {
+    crate_prefix_inner(accumulator, crate_name, separator, false)
+}
+
+/// Appends Cargo's lowercased `{lowerprefix}` value.
+pub(crate) fn crate_lowerprefix(accumulator: &mut String, crate_name: &str, separator: char) -> Option<()> {
+    crate_prefix_inner(accumulator, crate_name, separator, true)
+}
+
+fn crate_prefix_inner(accumulator: &mut String, crate_name: &str, separator: char, lowercase: bool) -> Option<()> {
     match crate_name.len() {
         0 => return None,
         1 => accumulator.push('1'),
@@ -45,7 +55,7 @@ pub(crate) fn crate_prefix(accumulator: &mut String, crate_name: &str, separator
                     .as_bytes()
                     .get(0..1)?
                     .iter()
-                    .map(|c| c.to_ascii_lowercase() as char),
+                    .map(|c| (if lowercase { c.to_ascii_lowercase() } else { *c }) as char),
             );
         }
         _ => {
@@ -54,7 +64,7 @@ pub(crate) fn crate_prefix(accumulator: &mut String, crate_name: &str, separator
                     .as_bytes()
                     .get(0..2)?
                     .iter()
-                    .map(|c| c.to_ascii_lowercase() as char),
+                    .map(|c| (if lowercase { c.to_ascii_lowercase() } else { *c }) as char),
             );
             accumulator.push(separator);
             accumulator.extend(
@@ -62,7 +72,7 @@ pub(crate) fn crate_prefix(accumulator: &mut String, crate_name: &str, separator
                     .as_bytes()
                     .get(2..4)?
                     .iter()
-                    .map(|c| c.to_ascii_lowercase() as char),
+                    .map(|c| (if lowercase { c.to_ascii_lowercase() } else { *c }) as char),
             );
         }
     };
@@ -72,11 +82,52 @@ pub(crate) fn crate_prefix(accumulator: &mut String, crate_name: &str, separator
 pub(crate) fn crate_name_to_relative_path(crate_name: &str, separator: Option<char>) -> Option<String> {
     let separator = separator.unwrap_or(std::path::MAIN_SEPARATOR);
     let mut rel_path = String::with_capacity(crate_name.len() + 6);
-    crate_prefix(&mut rel_path, crate_name, separator)?;
+    crate_lowerprefix(&mut rel_path, crate_name, separator)?;
     rel_path.push(separator);
     rel_path.extend(crate_name.as_bytes().iter().map(|c| c.to_ascii_lowercase() as char));
 
     Some(rel_path)
+}
+
+#[cfg(test)]
+mod tests {
+    use super::{crate_lowerprefix, crate_name_to_relative_path, crate_prefix};
+
+    #[test]
+    fn crate_prefixes_follow_cargo_layout_rules() {
+        for (name, prefix, lowerprefix) in [
+            ("a", "1", "1"),
+            ("ab", "2", "2"),
+            ("AbC", "3/A", "3/a"),
+            ("MyCrate", "My/Cr", "my/cr"),
+        ] {
+            let mut actual_prefix = String::new();
+            crate_prefix(&mut actual_prefix, name, '/').unwrap();
+            assert_eq!(actual_prefix, prefix);
+
+            let mut actual_lowerprefix = String::new();
+            crate_lowerprefix(&mut actual_lowerprefix, name, '/').unwrap();
+            assert_eq!(actual_lowerprefix, lowerprefix);
+        }
+    }
+
+    #[test]
+    fn empty_crate_names_have_no_prefix() {
+        let mut prefix = String::new();
+        assert!(crate_prefix(&mut prefix, "", '/').is_none());
+        assert!(prefix.is_empty());
+
+        assert!(crate_lowerprefix(&mut prefix, "", '/').is_none());
+        assert!(prefix.is_empty());
+    }
+
+    #[test]
+    fn local_index_paths_use_lowerprefix_and_lowercase_filenames() {
+        assert_eq!(
+            crate_name_to_relative_path("MyCrate", Some('/')).as_deref(),
+            Some("my/cr/mycrate"),
+        );
+    }
 }
 
 /// Matches https://github.com/rust-lang/cargo/blob/2928e32734b04925ee51e1ae88bea9a83d2fd451/crates/cargo-util-schemas/src/core/source_kind.rs#L5

@@ -71,6 +71,16 @@ mod with_sparse_http_feature {
         }
     }
 
+    #[test]
+    fn crate_url_uses_a_lowercase_index_path() {
+        let index = crates_io();
+
+        assert_eq!(
+            index.crate_url("MyCrate").as_deref(),
+            Some("https://index.crates.io/my/cr/mycrate"),
+        );
+    }
+
     mod parse_cache_response {
         use crate::sparse_index::with_sparse_http_feature::crates_io;
         use http::header;
