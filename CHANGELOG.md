@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## Unreleased
+## 3.14.2 (2026-09-03)
 
 Add a new `IndexConfig::download_url_with_checksum()` method, and produce more conformant download URLs in general.
 
@@ -13,7 +13,7 @@ Add a new `IndexConfig::download_url_with_checksum()` method, and produce more c
 
 <csr-read-only-do-not-edit/>
 
- - 2 commits contributed to the release.
+ - 4 commits contributed to the release.
  - 3 days passed between releases.
  - 0 commits were understood as [conventional](https://www.conventionalcommits.org).
  - 0 issues like '(#ID)' were seen in commit messages
@@ -25,6 +25,8 @@ Add a new `IndexConfig::download_url_with_checksum()` method, and produce more c
 <details><summary>view details</summary>
 
  * **Uncategorized**
+    - Update `gix` to the latest version ([`a8b2a87`](https://github.com/syphar/rust-crates-index/commit/a8b2a878b37614e8bdb9dcd9380a998ac0baf015))
+    - Prepare changelog prior to release ([`1189031`](https://github.com/syphar/rust-crates-index/commit/11890316efc411d23cb694ed3da0aedd410e2a33))
     - Review ([`7ea561d`](https://github.com/syphar/rust-crates-index/commit/7ea561d84e12f81428f246b031b619d66e4e8594))
     - Fix registry download URL template expansion ([`8369c35`](https://github.com/syphar/rust-crates-index/commit/8369c35c51c62919b20cb0d34501e36a98ae5278))
 </details>
